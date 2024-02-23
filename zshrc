@@ -144,3 +144,12 @@ if command -v ngrok &>/dev/null; then
   eval "$(ngrok completion)"
 fi
 
+PATH="$(bash --norc -ec 'IFS=:; paths=($PATH);
+for i in ${!paths[@]}; do
+if [[ ${paths[i]} == "''/Users/jbenitezg/.pyenv/shims''" ]]; then unset '\''paths[i]'\'';
+fi; done;
+echo "${paths[*]}"')"
+export PATH="/Users/jbenitezg/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+
+export SPATIALINDEX_C_LIBRARY='/opt/homebrew/Cellar/spatialindex/1.9.3/lib'
