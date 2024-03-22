@@ -153,3 +153,4 @@ export PATH="/Users/jbenitezg/.pyenv/shims:${PATH}"
 command pyenv rehash 2>/dev/null
 
 export SPATIALINDEX_C_LIBRARY='/opt/homebrew/Cellar/spatialindex/1.9.3/lib'
+eval "$(gh copilot alias -- zsh)"
