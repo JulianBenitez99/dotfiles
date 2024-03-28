@@ -59,7 +59,7 @@ alias java8='export JAVA_HOME=$JAVA_8_HOME'
 alias java11='export JAVA_HOME=$JAVA_11_HOME'
 alias java17='export JAVA_HOME=$JAVA_17_HOME'
 
-java11
+java17
 # ==========================
 
 # ========= Go =========
